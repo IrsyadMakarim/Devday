@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/roboto_36.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scene/Credit.gd" type="Script" id=2]
+
+[node name="Credit" type="MarginContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.380392, 0.176471, 0.176471, 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 1024.0
+margin_bottom = 595.0
+custom_fonts/font = ExtResource( 1 )
+text = "Credit
+Muhammad Irsyad Makarim - Game Programmer
+Sahrul Laila Safitri - Game Designer
+
+Music
+DOS88 - Race To Mars
+DOS88 - Billy's Sacrifice
+
+Sprite
+ansimuz - Explosion Animation Pack
+Maxicons - Bullet Asset
+PNGMart - Heart Asset
+kisscc0 - Grenade Asset"

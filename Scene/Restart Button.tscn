@@ -1,0 +1,78 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/roboto_36.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scene/Restart Button.gd" type="Script" id=2]
+
+[node name="Restart Button" type="MarginContainer"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -236.0
+margin_bottom = 212.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 448.0
+color = Color( 0.380392, 0.176471, 0.176471, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 448.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 415.0
+margin_top = 139.0
+margin_right = 609.0
+margin_bottom = 308.0
+custom_constants/separation = 83
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_right = 194.0
+margin_bottom = 43.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer"]
+margin_right = 194.0
+margin_bottom = 43.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_right = 19.0
+margin_bottom = 43.0
+rect_min_size = Vector2( 19, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = ">"
+
+[node name="OptionName" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer/HBoxContainer"]
+margin_left = 23.0
+margin_right = 194.0
+margin_bottom = 43.0
+rect_min_size = Vector2( 171, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "Restart"
+
+[node name="CenterContainer3" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
+margin_top = 126.0
+margin_right = 194.0
+margin_bottom = 169.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer/CenterContainer3"]
+margin_right = 194.0
+margin_bottom = 43.0
+
+[node name="Selector" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_right = 19.0
+margin_bottom = 43.0
+rect_min_size = Vector2( 19, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = ">"
+
+[node name="OptionName" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer3/HBoxContainer"]
+margin_left = 23.0
+margin_right = 194.0
+margin_bottom = 43.0
+rect_min_size = Vector2( 171, 0 )
+custom_fonts/font = ExtResource( 1 )
+text = "Main Menu"

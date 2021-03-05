@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Billy's Sacrifice.wav-aee926cd35d676a78790acbf4fbaa80c.sample"
+
+[deps]
+
+source_file="res://Audio/Billy's Sacrifice.wav"
+dest_files=[ "res://.import/Billy's Sacrifice.wav-aee926cd35d676a78790acbf4fbaa80c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
